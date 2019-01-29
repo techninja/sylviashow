@@ -1,0 +1,129 @@
+/**
+* @file demo_styles.css
+* All DML Demo 2012 specific styles (not including ninjaship styles)
+*/
+
+body {
+  padding: 0;
+  background-color: #000;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#finishline {
+  background: -moz-linear-gradient(top, rgba(255,50,50,0.8) 19%, rgba(255,50,50,0.8) 50%, rgba(255,7,7,0.8) 93%, rgba(255,0,0,0) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(19%,rgba(255,50,50,0.8)), color-stop(50%,rgba(255,50,50,0.8)), color-stop(93%,rgba(255,7,7,0.8)), color-stop(100%,rgba(255,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255,50,50,0.8) 19%,rgba(255,50,50,0.8) 50%,rgba(255,7,7,0.8) 93%,rgba(255,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255,50,50,0.8) 19%,rgba(255,50,50,0.8) 50%,rgba(255,7,7,0.8) 93%,rgba(255,0,0,0) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255,50,50,0.8) 19%,rgba(255,50,50,0.8) 50%,rgba(255,7,7,0.8) 93%,rgba(255,0,0,0) 100%); /* IE10+ */
+  background: linear-gradient(top, rgba(255,50,50,0.8) 19%,rgba(255,50,50,0.8) 50%,rgba(255,7,7,0.8) 93%,rgba(255,0,0,0) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccff3232', endColorstr='#00ff0000',GradientType=0 ); /* IE6-9 */
+  color: #FFFFFF;
+  font-family: arial;
+  height: 200px;
+  position: absolute;
+  right: 20px;
+  text-transform: none;
+  z-index: 10;
+  white-space: pre;
+  text-align: center;
+  width: 20px;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 20px;
+  height: 340px;
+  line-height: 23px;
+  top: 0;
+}
+
+#finishline span {
+  margin-top: 83px;
+  display: block;
+}
+
+#winscreen {
+  background-color: orange;
+  z-index: 11;
+  position: absolute;
+  margin: 0 auto;
+  width: 30%;
+  padding: 20px;
+  left:30%;
+  text-align: center;
+  top: 50px;
+  border-radius: 20px;
+  opacity:0.8;
+
+  display: none;
+}
+
+#winscreen img {
+  margin-left: 20%;
+  width: 160px;
+  margin-top: 21px;
+}
+
+#winscreen h2 {
+  margin-top: 8px;
+  margin-bottom: -5px;
+  line-height: 20px;
+}
+
+#backcanvas {
+  position: absolute;
+  z-index: 9; /* Below the finish line  */
+  left: 0;
+  top: 0;
+}
+
+.preload {
+  width: 0 !important;
+  display: block;
+}
+
+img.logo {
+  width: 70%;
+  opacity: .7;
+  position: absolute;
+  bottom: 2px;
+  margin-left: 10%;
+}
+
+a img.logo { /* Cheap hack to make logo clickable but same size and transparent */
+  opacity: 0;
+  z-index: 20;
+}
+
+/* DEBUG */
+
+.bar {
+  width: 22px;
+  position: absolute;
+  background-color: red;
+  bottom: 0;
+}
+#a1 {left: 22px; background-color: blue;}
+#a2 {left: 44px; background-color: green;}
+#a3 {left: 66px; background-color: red;}
+#a4 {left: 88px; background-color: blue;}
+#a5 {left: 110px; width: 28px; background-color: green;}
+
+.wrapper {
+  background-color: gainsboro;
+  bottom: 10px;
+  height: 64px;
+  position: absolute;
+  right: 10px;
+  width: 138px;
+  z-index: 20;
+}
+
+#controls {
+  background-color: royalblue;
+  position: absolute;
+  right: 148px;
+  bottom: 10px;
+  height: 64px;
+  width: 128px;
+  z-index: 20;
+}
